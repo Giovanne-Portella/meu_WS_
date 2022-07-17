@@ -1,0 +1,46 @@
+@media (min-width:621px) {
+    .fecha-menu-label{
+        display: none;
+    }
+}
+
+@media (max-width:620px) {
+    .menu{
+        display: none;
+    }
+    .menu {
+        text-align: center;
+        bottom: 0;
+    }
+    .menuFLEX,.menu ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu ul a{
+        margin-top: 35px;
+        width: 45rem;
+        font-size: 3rem;
+    }
+    .bloco_menu{
+        display: none;
+    }
+}
+
+@media (max-width:900px) {
+
+    .pai-intro, .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "r1" "r2" "r3";
+    }
+    .pai-intro h2 {
+        font-size: 4.5rem;
+    }
+    .pai-intro p {
+        font-size: 3.6rem;
+        max-width: 40rem;
+    }
+    .pai-intro img {
+        width: 400px;
+    }
+}

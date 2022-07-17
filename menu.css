@@ -1,0 +1,131 @@
+.espacamento_menu{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    position: relative;
+}
+
+
+.menu ul li a::after{
+    background-color: crimson;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.menu ul li a::before{
+    background-color: white;
+    content: '';
+    position: absolute;
+    bottom: 2.2rem;
+    left: 50%;
+    width:0%;
+    height: 0.2rem;
+    transition: all 300ms ease-in-out ;
+}
+
+.menu ul li a:hover::before{
+    width:50%;
+    left: 25%;
+
+  
+
+}
+
+
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu h1 input{
+    font-size: 30px;
+    margin-left: 2px;
+    position: relative;
+    top: -7px;
+    border-radius: 10px;
+}
+.menu h1 a{
+    font-size: 5rem;
+}
+.menu ul a , .menu h1 a{
+    text-decoration: none;
+    color:red;
+}
+.menu{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+.menuFLEX{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.fecha-menu{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.fecha-menu-label::after{
+    content: '≡';
+    position: fixed;
+    z-index: 5;
+    top: 2rem;
+    right: 2rem;
+    background-color:black;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem ;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+
+.fecha-menu:checked~.menu{
+    display: block;
+}
+.fecha-menu:checked~.fecha-menu-label::after{
+    content: 'x';
+}
+
+
+.voltar-inicio{
+    position:fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+
+    text-decoration: none;
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}

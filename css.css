@@ -1,0 +1,21 @@
+:root{
+    --branco: #ffffff;
+    --preto:#000000;
+    --padTEXTO: 3.5rem;
+}
+ 
+
+.fundo1{
+    background-image:url('/Imagens/fundo.svg') ;
+    background-position: center center;
+    background-size: cover;
+    color: var(--branco);
+
+}
+
+.fundo2{
+    background-color: #ffffff;
+
+}
+
+

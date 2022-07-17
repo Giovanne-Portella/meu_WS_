@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth ;
+}
+.espacamento_tela{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:  var(--padTEXTO);;
+}
+
+.tamanhoSecoes{
+    min-height: 100vh;
+}
+.bloco_menu{
+    height: 6rem;
+}
+
+

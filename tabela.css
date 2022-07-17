@@ -1,0 +1,11 @@
+.tabela{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table td, table th{
+    border: 1rem solid black;
+    color: black;
+
+}

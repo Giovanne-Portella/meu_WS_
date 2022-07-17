@@ -1,0 +1,12 @@
+.home{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+}
+p{
+    margin-bottom: 1.5rem;
+}

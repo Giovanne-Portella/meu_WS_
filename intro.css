@@ -1,0 +1,31 @@
+.pai-intro{
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-template-rows: 200px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 
+  "r1 r3"
+  "r2 r3";
+
+}
+
+.intro-titulo{
+  grid-area: r1;
+}
+
+
+.intro-paragrafo{
+  grid-area: r2;
+
+}
+.intro-imagem{
+  grid-area: r3;
+
+}
+
+@media screen and (max-width: 570px) {
+  .pai-intro{
+      grid-template-columns: 1fr;
+  }
+}
